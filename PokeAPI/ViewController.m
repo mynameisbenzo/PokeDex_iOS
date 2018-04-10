@@ -127,11 +127,11 @@
 -(void)randomPoke{
     _randomPokeNum = [self randomNum];
     if(_randomPokeNum < 10){
-        _URLCall = [NSString stringWithFormat:@"https://assets.pokemon.com/assets/cms2/img/pokedex/full/00%d.png", _randomPokeNum];
+        _URLCall = [NSString stringWithFormat:@"url/%d.png", _randomPokeNum];
     }else if(_randomPokeNum < 100){
-        _URLCall = [NSString stringWithFormat:@"https://assets.pokemon.com/assets/cms2/img/pokedex/full/0%d.png", _randomPokeNum];
+        _URLCall = [NSString stringWithFormat:@"url/%d.png", _randomPokeNum];
     }else{
-        _URLCall = [NSString stringWithFormat:@"https://assets.pokemon.com/assets/cms2/img/pokedex/full/%d.png", _randomPokeNum];
+        _URLCall = [NSString stringWithFormat:@"url/%d.png", _randomPokeNum];
     }
 }
 
